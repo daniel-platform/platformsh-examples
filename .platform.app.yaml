@@ -51,11 +51,11 @@ hooks:
       # Drupal 8 currently fails to create config directories
       # automatically during install.
       mkdir -p config/active config/staging
-      cd public
+      cd web
       drush -y updatedb
 
 # The configuration of scheduled execution.
 crons:
     drupal:
         spec: "*/20 * * * *"
-        cmd: "cd public ; drush core-cron"
+        cmd: "cd web ; drush core-cron"
