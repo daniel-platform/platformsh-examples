@@ -13,3 +13,7 @@ redis:
 solr:
     type: solr
     disk: 1024
+
+mongodb:
+    type: mongodb:3.0
+    disk: 2048
